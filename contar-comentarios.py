@@ -1,6 +1,6 @@
 quantidade = 0
 cont = False
-with open("teste.txt") as arquivo:
+with open("teste.java") as arquivo:
     for linha in arquivo:
         if cont == False:
             if '//' in linha:
@@ -13,7 +13,7 @@ with open("teste.txt") as arquivo:
         else:
             if '*/' in linha:
                 quantidade = quantidade + 1
-                cont = True
+                cont = False
             else:
                 quantidade = quantidade + 1
 print(quantidade)
